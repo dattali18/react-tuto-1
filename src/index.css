@@ -1,0 +1,38 @@
+
+
+* {
+    background-color: #3D3D3D;
+}
+
+.navbar_item_icon {
+    fill: #EDF6FF;
+    width: 30px;
+    height: 30px;
+}
+
+.navbar_item_icon :hover {
+    fill: #6DAFFE;
+}
+
+.navbar_item_text {
+    color: #EDF6FF;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.18px;
+    display: inline;
+    margin: 40px;
+}
+
+.navbar_logo_icon {
+    width: 50px;
+    height: 58.78px;
+}
+
+.navbar_logo_text {
+    color: #EDF6FF;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    display: inline;
+    margin: 20px;
+}
