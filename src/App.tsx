@@ -4,11 +4,15 @@ function App() {
   return (
     <>
       <div className="navbar-vertical">
-        <NavbarLogo />
+        <div className="navbar-logo-items">
+          <NavbarLogo />
 
-        <NavbarItem iconName="home" title="Home" />
-        <NavbarItem iconName="list" title="Tasks" />
-        <NavbarItem iconName="setting" title="Settings" />
+          <div className="navbar-item">
+            <NavbarItem iconName="home" title="Home" />
+            <NavbarItem iconName="list" title="Tasks" />
+            <NavbarItem iconName="setting" title="Settings" />
+          </div>
+        </div>
 
         <NavbarItem iconName="user" title="Logout" />
       </div>
@@ -26,12 +30,9 @@ interface NavBarItem_Props {
 function NavbarItem({ iconName, title }: NavBarItem_Props) {
   return (
     <>
-      <div className="navbar_item">
-        <img
-          src={"../public/" + iconName + ".svg"}
-          className="navbar_item_icon"
-        />
-        <p className="navbar_item_text">{title}</p>
+      <div className="navbar-items">
+        <img src={"/" + iconName + ".svg"} className="navbar-item-icon" />
+        <p className="navbar-item-text">{title}</p>
       </div>
     </>
   );
@@ -40,9 +41,9 @@ function NavbarItem({ iconName, title }: NavBarItem_Props) {
 function NavbarLogo() {
   return (
     <>
-      <div className="navbar_logo">
-        <img src="../public/logo.svg" className="navbar_logo_icon" />
-        <p className="navbar_logo_text">Task manager</p>
+      <div className="navbar-logo">
+        <img src="/logo.svg" className="navbar-logo-icon" />
+        <p className="navbar-logo-text">Task manager</p>
       </div>
     </>
   );
